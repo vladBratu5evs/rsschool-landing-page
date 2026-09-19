@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -5,24 +8,39 @@ body {
     background-color: #E1D4C9;
     font-family: 'Inter', sans-serif;
     color: #403F3D;
+    max-width: 1360px;
+    padding: 0px 40px;
+    margin: 0 auto;
 }
 h1, h2{
-font-weight: 600px;
+font-weight: 600;
 font-style: italic;
 font-size: 60px;
 }
 h3{
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 24px;
 }
 p {
 font-weight: 400;
 font-size: 16px;
 }
-nav ul {
-    list-style-type: none;
-
+.nav {
+    flex: 1;
 }
+.nav ul {
+display: flex;
+justify-content: center;
+gap: 40px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 a {
    text-decoration: none;
 }
@@ -45,9 +63,10 @@ color: #403F3D;
 }
 header a{
 font-size: 16px;
-font-weight: 600px;
+font-weight: 600;
 color: inherit;
 }
+
 .hero {
   background-image: url("/assets/img/img-hero.svg");
   background-size: cover;
@@ -55,8 +74,30 @@ color: inherit;
   background-repeat: no-repeat;
   border-radius: 40px;
   width: 100%;
-  max-width: 1360px;
   min-height: 644px;
   padding: 100px;
-  margin: 0px 40px;
 }
+.theme-toggle{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    position: relative;
+}
+
+.img-hover {
+display: none;
+}
+.theme-toggle:hover .img-default{
+    /* opacity: 0; */
+    display: none;
+}
+.theme-toggle:hover .img-hover {
+display: flex;
+gap: 24px;
+}
+.menu-button:hover{
+border-color: #403F3D;
+border-bottom: 2px solid;
+}
+
+
