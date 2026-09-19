@@ -1,2 +1,1 @@
-- https://vladbratu5evs.github.io/rsschool-landing-page/homepage.html
-- https://vladbratu5evs.github.io/rsschool-landing-page/catalog.html
+- https://vladbratu5evs.github.io/rsschool-landing-page/
