@@ -440,7 +440,10 @@ body.dark-theme .menu-button:hover {
     padding: 60px 40px;
     gap: 60px;
   }
-    .menu-button{
+ .slider-controls,
+  .left-arrow,
+  .right-arrow,
+  .menu-button{
     display: none;
   }
     .menu-grid .coffee-grid-item:nth-child(n+5) {
