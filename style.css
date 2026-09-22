@@ -353,6 +353,40 @@ display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+body.dark-theme {
+    background-color: #403F3D;
+    color: #E1D4C9;
+}
+
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme .catalog-title,
+body.dark-theme .grid-content p,
+body.dark-theme .menu-button{
+    color: #E1D4C9;
+}
+body.dark-theme .theme-toggle .img-default:hover{
+    background-color: #E1D4C9;
+    border-radius: 100px;
+}
+body.dark-theme .theme-toggle .img-default{
+    background-color: #E1D4C9;
+    border-radius: 100px;
+}
+
+body.dark-theme h1 {
+    color: #403F3D;
+}
+
+body.dark-theme .coffee-grid-item {
+    border-color: #665F55;
+    background-color: #4a4947;
+}
+
+body.dark-theme .menu-button:hover {
+    border-color: #E1D4C9;
+}
+
   @media (max-width: 768px) {
   body {
     overflow-x: hidden;
