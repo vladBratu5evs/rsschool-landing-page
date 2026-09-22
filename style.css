@@ -61,6 +61,8 @@ padding: 0;
 .navigation {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
     padding-bottom:15px;
 }
 
@@ -119,9 +121,10 @@ h1 span {
     color: #B0907A;
 }
 .offer-button{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     color: #403F3D;
     background-color:#E1D4C9;
     width: 200px;
@@ -130,9 +133,7 @@ h1 span {
     font-size: 16px;
     font-weight: 600;
     border: none;
-    margin-top: 15px;
-    padding-left: 25px;
-}
+    margin-top: 15px;}
 .offer-button svg{
     visibility: hidden;
 }
@@ -344,6 +345,7 @@ width: 60px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .burger-menu .line {
+display: block;
   width: 24px;
   height: 2px;
   background-color: #403F3D;
@@ -410,8 +412,10 @@ width: 60px;
     .menu-grid .coffee-grid-item:nth-child(n+5) {
     display: none;
   }
-  .burger-menu{
-  display: flex;
+  .burger-menu {
+  display: flex !important;
+   min-width: 60px !important;
+    min-height: 60px !important;
 }
 .mobile-app{
     flex-direction: column;
@@ -439,9 +443,9 @@ width: 60px;
     max-width: 100%;
     text-align: center;
   }
-  .offer button {
+  .offer-button {
     margin: 24px auto 0 auto;
-    display: block;
+    display: flex;
   }
 
   .slider-item img {
@@ -468,7 +472,9 @@ width: 60px;
     display: none;
   }
     .burger-menu{
-  display: flex;
+  display: flex !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
 }
 .mobile-app{
     flex-direction: column;
