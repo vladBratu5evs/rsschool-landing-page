@@ -240,7 +240,7 @@ footer h2{
 
 .mobile-app{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
 }
 .mobile-screens-img{
@@ -413,6 +413,9 @@ width: 60px;
   .burger-menu{
   display: flex;
 }
+.mobile-app{
+    flex-direction: column;
+}
 }
 
 @media (max-width: 380px) {
@@ -466,6 +469,9 @@ width: 60px;
   }
     .burger-menu{
   display: flex;
+}
+.mobile-app{
+    flex-direction: column;
 }
 }
 
