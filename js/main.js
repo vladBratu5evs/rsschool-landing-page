@@ -16,4 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("theme", newTheme);
     });
   }
+
+  // 3. Burger Menu Logic (Works perfectly!)
+  const burgerBtn = document.getElementById('burger-btn');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (burgerBtn && navMenu) {
+    burgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('is-active');
+      burgerBtn.classList.toggle('open');
+    });
+
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-active');
+        burgerBtn.classList.remove('open');
+      });
+    });
+  }
 });
