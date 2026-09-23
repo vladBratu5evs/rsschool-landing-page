@@ -9,15 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
-      // Toggle the dark-theme class on the <body> tag
       document.body.classList.toggle("dark-theme");
 
       const newTheme = document.body.classList.contains("dark-theme") ? "dark" : "light";
       localStorage.setItem("theme", newTheme);
     });
   }
-
-  // 3. Burger Menu Logic (Works perfectly!)
   const burgerBtn = document.getElementById('burger-btn');
   const navMenu = document.getElementById('nav-menu');
 
