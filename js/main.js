@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("theme", newTheme);
     });
   }
+
   const burgerBtn = document.getElementById('burger-btn');
   const navMenu = document.getElementById('nav-menu');
 
@@ -22,14 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerBtn.addEventListener('click', () => {
       navMenu.classList.toggle('is-active');
       burgerBtn.classList.toggle('open');
+      document.body.classList.toggle('lock-scroll');
     });
 
     const navLinks = navMenu.querySelectorAll('a');
+
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('is-active');
         burgerBtn.classList.remove('open');
+        document.body.classList.remove('lock-scroll');
       });
     });
-  }
-});
+    addEventListener('keydown', (event) => {
+        if (event.key === 'Escape')
+        navMenu.classList.remove('is-active');
+        burgerBtn.classList.remove('open');
+        document.body.classList.remove('lock-scroll');
+      });
+    }});
