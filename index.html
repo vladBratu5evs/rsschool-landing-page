@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="navigation">
+<!-- <header class="navigation">
 <a href="/">
 <img src="assets/img/logo.svg" alt="logo">
 </a>
@@ -49,10 +49,10 @@
   <span class="line"></span>
   <span class="line"></span>
 </button>
-    </header>
+    </header> -->
 
     <main>
-        <div id="hero" class="hero-container">
+        <!-- <div id="hero" class="hero-container">
         <div class="offer">
                 <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
                 <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
@@ -66,43 +66,57 @@
 </svg>
 </a>
         </div>
-        </div>
-        <div id="favorite-coffee" class="favorite-coffee-container">
-<h2>Choose your <span>favorite</span> coffee</h2>
+        </div> -->
+<div id="favorite-coffee" class="favorite-coffee-container">
+<h2 style="text-align: center;">Choose your <span>favorite</span> coffee</h2>
 <div class="slider-container">
-    <div class="left-arrow">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
-        <path d="M36.5 30H24M30 36L24 30L30 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
+                        <div class="slider-item">
+                            <img src="assets/img/coffee-slider-1.svg" alt="frappucino">
+                            <div class="slider-text">
+                            <h3>S’mores Frappuccino</h3>
+                            <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                            <h3>$5.50</h3>
+                            </div>
+                        </div>
 
-<div class="slider-item">
-        <img src="assets/img/coffee-slider-1.svg" alt="frappucino">
-        <div class="slider-text">
-          <h3>S’mores Frappuccino</h3>
-          <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-          <h3>$5.50</h3>
-          <div class="slider-controls">
-            <div class="slider-controls__item active"></div>
-            <div class="slider-controls__item"></div>
-            <div class="slider-controls__item"></div>
-        </div>
-        </div>
-      </div>
+                            <div class="slider-item">
+                                <img src="assets/img/coffee-slider-2.svg" alt="caramel macchiato">
+                                <div class="slider-text">
+                                <h3>Caramel Macchiato</h3>
+                                <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <h3>$5.00</h3>
+                                </div>
+                            </div>
 
-    <div class="right-arrow">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
-<path d="M24 30H36.5M30.5 36L36.5 30L30.5 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                            <div class="slider-item">
+                                <img src="assets/img/coffee-slider-3.svg" alt="ice coffee">
+                                <div class="slider-text">
+                                <h3>Ice coffee</h3>
+                                <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <h3>$4.50</h3>
+                                </div>
+                            </div>
+                                            <div class="left-arrow" id="prev">
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+                                            <path d="M36.5 30H24M30 36L24 30L30 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            </div>
+
+                                            <div class="right-arrow" id="next">
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+                                            <path d="M24 30H36.5M30.5 36L36.5 30L30.5 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            </div>
 </div>
 <div class="slider-controls">
+            <div class="slider-controls__item active" id="first-control"></div>
+            <div class="slider-controls__item" id="second-control"></div>
+            <div class="slider-controls__item" id="third-control"></div>
 </div>
-    </div>
-
-        </div>
-        <div class="about">
+</div>
+        <!-- <div class="about">
 <h2>
 Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
 </h2>
@@ -141,9 +155,9 @@ Resource is <span>the perfect and cozy place</span> where you can enjoy a variet
             </div>
 
 
-        </div>
+        </div> -->
     </main>
-    <footer id="contact-us" class="footer">
+    <!-- <footer id="contact-us" class="footer">
         <div class="footer-child">
             <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
 <div class="social-logos">
@@ -200,7 +214,7 @@ Resource is <span>the perfect and cozy place</span> where you can enjoy a variet
 </svg>
 Mon–Sat: 9:00–23:00</span></p>
 </div>
-    </footer>
+    </footer> -->
     <script src="js/main.js"></script>
 </body>
 </html>

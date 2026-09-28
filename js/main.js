@@ -41,4 +41,51 @@ document.addEventListener("DOMContentLoaded", () => {
         burgerBtn.classList.remove('open');
         document.body.classList.remove('lock-scroll');
       });
-    }});
+    }
+
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+
+  const controls = [
+  document.getElementById('first-control'),
+  document.getElementById('second-control'),
+  document.getElementById('third-control')
+  ];
+
+  const sliderItems = document.querySelectorAll('.slider-item');
+
+  let currentIndex = 0;
+  let totalItems = controls.length;
+
+  function moveSlider () {
+  sliderItems.forEach((item) => {
+    item.style.setProperty('transform', `translateX(-${currentIndex * 100}%)`);
+  });
+
+  controls.forEach((ctrl, index) => {
+    if (index === currentIndex) {
+      ctrl.classList.add('active');
+    } else {
+      ctrl.classList.remove('active');
+    }
+      });
+    }
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < totalItems - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  moveSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalItems - 1;
+  }
+  moveSlider();
+});
+});
