@@ -441,7 +441,7 @@ body.dark-theme .menu-button:hover {
     border-radius: 100px;
 }
 .refresh{
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 60px;
