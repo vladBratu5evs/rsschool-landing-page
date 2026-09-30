@@ -457,14 +457,15 @@ body.dark-theme .menu-button:hover {
 }
 .modal-wrapper{
   background-color: #403F3DCC;
+  background: cover;
   display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 170px;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   z-index: 100;
+  scroll-behavior: none;
 }
 .modal{
 background-color: #E1D4C9;
@@ -472,24 +473,55 @@ display: flex;
 justify-content: center;
 padding: 20px;
 border-radius: 40px;
+width: 800px;
+height: auto;
 gap: 20px;
 }
 .img-modal img{
 border-radius: 40px;
 }
 .modal-contents{
-
+display: flex;
+flex-direction: column;
+line-height: 0px;
 }
 .modal-wrapper.active {
 display: flex;
 }
+.size{
+  display: flex;
+  gap: 8px;
+}
+.additive-item,
+.size-item,
 .modal-close{
-    background-color: #665F55;
-    color: #E1D4C9;
+  border-style: solid;
+  border-color: #665F55;
+  border-radius: 40px;
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.additives{
+  display: flex;
+  gap: 8px;
+}
+.additive-item:hover,
+.size-item:hover,
+.modal-close:hover{
+  background-color: #665F55;
+  color: #E1D4C9;
+}
+.total-price{
+  display: flex;
+  justify-content: space-between;
+}
+.modal-close{
     border-radius: 100px;
     padding: 20px;
     justify-content: center;
     cursor: pointer;
+    align-items: center;
 }
 @media (max-width: 768px) {
   body {

@@ -21,27 +21,27 @@ modalWrapper.innerHTML = `
 
 <div class="modal-contents">
 
-<h2>${product.name}</h2>
+<h3>${product.name}</h3>
 
 <p>${product.description}</p>
 
 <p>Size</p>
 <div class="size">
-<div>${product.sizes.s.size}</div>
-<div>${product.sizes.m.size}</div>
-<div>${product.sizes.l.size}</div>
+<div class="size-item">${product.sizes.s.size}</div>
+<div class="size-item">${product.sizes.m.size}</div>
+<div class="size-item">${product.sizes.l.size}</div>
 </div>
 
 <p>Additives</p>
 <div class="additives">
-<div>${product.additives[0].name}</div>
-<div>${product.additives[1].name}</div>
-<div>${product.additives[2].name}</div>
+<div class="additive-item">${product.additives[0].name}</div>
+<div class="additive-item">${product.additives[1].name}</div>
+<div class="additive-item">${product.additives[2].name}</div>
 </div>
 
 <div class="total-price">
-<h2>Total:</h2>
-<h2>$${product.price}</h2>
+<h3>Total:</h3>
+<h3>$${product.price}</h3>
 </div>
 
 <div class="disclaimer">
@@ -55,9 +55,11 @@ Close
 </div>
 `;
 modalWrapper.classList.add("active");
+document.body.classList.toggle('lock-scroll');
 
 modalWrapper.querySelector(".modal-close").addEventListener("click", () => {
 modalWrapper.classList.remove("active");
+document.body.classList.remove('lock-scroll');
 modalWrapper.innerHTML = "";
 });
 }
