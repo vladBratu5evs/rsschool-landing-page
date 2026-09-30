@@ -114,7 +114,7 @@ item => item.category === category
 
 
 filteredItems.forEach(item => {
-const card = `<div class="grid-item">
+const card = `<div class="grid-item" data-name="${item.name}">
 <img src="${item.image}" alt="${item.name}">
 <div class="grid-content">
 <p>${item.name}</p>
